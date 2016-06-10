@@ -1,0 +1,377 @@
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* line 15, sass/media.sass */
+  .artical_box:hover .hover_box:hover a {
+    line-height: 290px;
+  }
+
+  /* line 20, sass/media.sass */
+  .main_menu ul li {
+    width: 150px;
+    font-size: 14px;
+  }
+  /* line 23, sass/media.sass */
+  .main_menu ul li a {
+    letter-spacing: 1.4px;
+  }
+
+  /* line 27, sass/media.sass */
+  .box_wrapper h2 {
+    width: 285px;
+  }
+  /* line 29, sass/media.sass */
+  .box_wrapper .info_block {
+    width: 295px;
+  }
+  /* line 31, sass/media.sass */
+  .box_wrapper .info_block .view {
+    margin-left: 55px;
+  }
+  /* line 33, sass/media.sass */
+  .box_wrapper .info_block .like {
+    margin-left: 45px;
+  }
+
+  /* line 37, sass/media.sass */
+  .category:after {
+    width: 175px;
+  }
+
+  /* line 41, sass/media.sass */
+  footer .contacts {
+    margin-left: 40px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 55, sass/media.sass */
+  .artical_box:hover .hover_box {
+    display: block;
+  }
+  /* line 57, sass/media.sass */
+  .artical_box .hover_box {
+    display: block;
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: -2px;
+    background-color: #fc7270;
+    border: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  /* line 66, sass/media.sass */
+  .artical_box .hover_box:hover {
+    background-color: #fc7270;
+  }
+  /* line 68, sass/media.sass */
+  .artical_box .hover_box:hover a {
+    line-height: 40px !important;
+    padding: 0 !important;
+    color: #fff;
+  }
+  /* line 72, sass/media.sass */
+  .artical_box .hover_box a {
+    line-height: 40px;
+    border: none;
+    opacity: 1;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    display: block;
+    color: #fff;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  /* line 83, sass/media.sass */
+  .artical_box .hover_box a:hover {
+    line-height: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  /* line 95, sass/media.sass */
+  .toggle_mnu {
+    display: block;
+  }
+
+  /* line 98, sass/media.sass */
+  .main_menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+    right: 0;
+    top: 0;
+    display: none;
+  }
+  /* line 108, sass/media.sass */
+  .main_menu ul,
+  .main_menu li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 113, sass/media.sass */
+  .main_menu ul {
+    margin-top: 180px;
+    text-align: center;
+  }
+
+  /* line 117, sass/media.sass */
+  .main_menu ul li {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 122, sass/media.sass */
+  .main_menu_toogle {
+    display: block;
+  }
+
+  /* line 125, sass/media.sass */
+  .toogle_menu {
+    bottom: 0;
+  }
+  /* line 127, sass/media.sass */
+  .toogle_menu a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    background-color: blue;
+  }
+
+  /* line 133, sass/media.sass */
+  .toggle_mnu {
+    width: 60px;
+    height: 60px;
+    float: right;
+    position: fixed;
+    z-index: 100;
+    border: none;
+    outline: none;
+    right: 20px;
+    top: 100px;
+    background-color: #fc7270;
+    -webkit-transition: top 0.5s ease;
+    transition: top 0.5s ease;
+  }
+
+  /* line 149, sass/media.sass */
+  .sandwich {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 200;
+  }
+
+  /* line 160, sass/media.sass */
+  .sw-topper, .sw-bottom, .sw-footer {
+    display: block;
+  }
+
+  /* line 163, sass/media.sass */
+  .sw-topper {
+    position: relative;
+    top: 0;
+    width: 32px;
+    height: 4px;
+    background: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: -webkit-transform 0.5s, top 0.2s;
+            transition: transform 0.5s, top 0.2s;
+  }
+
+  /* line 173, sass/media.sass */
+  .sw-bottom {
+    position: relative;
+    width: 32px;
+    height: 4px;
+    top: 8px;
+    background: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: -webkit-transform 0.5s, top 0.2s;
+            transition: transform 0.5s, top 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+            transition-delay: 0.2s, 0s;
+  }
+
+  /* line 184, sass/media.sass */
+  .sw-footer {
+    position: relative;
+    width: 32px;
+    height: 4px;
+    top: 16px;
+    background: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+
+  /* line 196, sass/media.sass */
+  .sandwich.active .sw-topper {
+    top: 15px;
+    -webkit-transform: rotate(140deg);
+        -ms-transform: rotate(140deg);
+            transform: rotate(140deg);
+  }
+  /* line 199, sass/media.sass */
+  .sandwich.active .sw-bottom {
+    top: 5px;
+    -webkit-transform: rotate(-140deg);
+        -ms-transform: rotate(-140deg);
+            transform: rotate(-140deg);
+  }
+  /* line 202, sass/media.sass */
+  .sandwich.active .sw-footer {
+    opacity: 0;
+    top: 0;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+
+  /* line 207, sass/media.sass */
+  .box_wrapper .info_block {
+    width: 345px;
+  }
+
+  /* line 210, sass/media.sass */
+  .box_wrapper .info_block .date {
+    margin-left: 44px;
+  }
+
+  /* line 213, sass/media.sass */
+  .box_wrapper .info_block .view {
+    margin-left: 88px;
+  }
+
+  /* line 216, sass/media.sass */
+  .box_wrapper .info_block .like {
+    margin-left: 56px;
+  }
+
+  /* line 220, sass/media.sass */
+  .category:after {
+    width: 228px;
+  }
+
+  /* line 224, sass/media.sass */
+  footer .contacts {
+    margin-left: 22px;
+  }
+  /* line 226, sass/media.sass */
+  footer .about_us {
+    margin-left: 10px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 235, sass/media.sass */
+  .slogan_container h1 {
+    font-size: 38px;
+  }
+  /* line 237, sass/media.sass */
+  .slogan_container p {
+    font-size: 14px;
+  }
+  /* line 239, sass/media.sass */
+  .slogan_container button {
+    font-size: 16px;
+  }
+
+  /* line 243, sass/media.sass */
+  .show_more_btn_container .show_more_btn {
+    font-size: 16px;
+  }
+
+  /* line 247, sass/media.sass */
+  .category:after {
+    width: 75%;
+  }
+
+  /* line 251, sass/media.sass */
+  .box_wrapper .text {
+    width: 90%;
+  }
+  /* line 253, sass/media.sass */
+  .box_wrapper .info_block {
+    width: 100%;
+  }
+  /* line 255, sass/media.sass */
+  .box_wrapper .info_block .view {
+    margin-left: 25%;
+  }
+  /* line 257, sass/media.sass */
+  .box_wrapper .info_block .like {
+    margin-left: 15%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* line 269, sass/media.sass */
+  .slogan_container button {
+    font-size: 14px;
+  }
+
+  /* line 273, sass/media.sass */
+  .show_more_btn_container .show_more_btn {
+    font-size: 14px;
+  }
+
+  /* line 276, sass/media.sass */
+  .logo {
+    padding: 25px 40px;
+  }
+
+  /* line 280, sass/media.sass */
+  .category:after {
+    width: 70%;
+  }
+
+  /* line 285, sass/media.sass */
+  .box_wrapper .text .view {
+    margin-left: 5%;
+  }
+  /* line 287, sass/media.sass */
+  .box_wrapper .text .like {
+    margin-left: 2%;
+  }
+
+  /* line 291, sass/media.sass */
+  footer .contacts {
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+/* Custom, iPhone Retina */
+@media screen and (orientation: landscape) {
+  /* line 303, sass/media.sass */
+  .main_menu ul {
+    margin-top: 0;
+  }
+}
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* Large Devices, Wide Screens */
+}

@@ -1,0 +1,337 @@
+@import "bourbon/bourbon"
+
+@mixin kerning($kerning)
+    letter-spacing: $kerning + px
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+    
+    .artical_box
+        .hover_box
+        &:hover .hover_box
+            &:hover
+                a  
+                    line-height: 290px
+
+    .main_menu
+        ul
+            li
+                width: 150px
+                font-size: 14px
+                a 
+                    +kerning(1.4)
+
+    .box_wrapper
+        h2
+            width: 285px
+        .info_block
+            width: 295px
+            .view
+                margin-left: 55px
+            .like
+                margin-left: 45px
+
+    .category
+        &:after
+            width: 175px
+    
+    footer
+        .contacts
+            margin-left: 40px
+        
+            
+            
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+
+        
+        
+
+    
+    .artical_box
+        &:hover .hover_box
+            display: block
+        .hover_box
+            display: block
+            width: 200px
+            height: 40px
+            top: 20px
+            left: -2px
+            background-color: rgba(#fc7270,1)
+            border: none
+            +transition(all 0.4s ease)
+            &:hover
+                background-color: rgba(#fc7270,1)
+            &:hover a 
+                line-height: 40px !important
+                padding: 0 !important
+                color: #fff
+            a 
+                line-height: 40px
+                border: none
+                opacity: 1
+                +transition(all 0.6s ease)
+                display: block
+                color: #fff
+                opacity: 1
+                width: 100%
+                height: 100%
+                padding: 0
+                &:hover
+                    line-height: 40px
+                    width: 100%
+                    height: 100%
+                    padding: 0
+    
+
+
+
+
+    
+
+    .toggle_mnu
+        display: block
+    
+    .main_menu
+        display: none
+        position: fixed
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.8)
+        z-index: 50
+        right: 0
+        top: 0
+        display: none
+        ul,
+        li 
+            list-style-type: none
+            padding: 0
+            margin: 0
+        ul
+            margin-top: 180px
+            text-align: center
+
+    .main_menu ul li
+        
+        display: block
+        width: 100%
+
+    .main_menu_toogle
+        display: block            
+
+    .toogle_menu
+        bottom: 0
+        a 
+            color: #fff
+            display: block
+            width: 100%
+            background-color: blue
+        
+    .toggle_mnu
+        width: 60px
+        height: 60px
+        float: right
+        position: fixed
+        z-index: 100
+        border: none
+        outline: none
+        right: 20px
+        top: 100px
+        background-color: #fc7270
+        +transition(top 0.5s ease)
+    
+    $w: 32px
+    $h: 4px
+
+    .sandwich 
+        width: $w
+        height: $w
+        position: absolute
+        top: 4px
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        z-index: 200
+    
+    .sw-topper, .sw-bottom, .sw-footer
+        display: block
+
+    .sw-topper
+        position: relative
+        top: 0
+        width: $w 
+        height: $h
+        background: rgb(255, 255, 255)
+        border: none 
+        border-radius: 4px 4px 4px 4px
+        transition: transform 0.5s, top 0.2s
+    
+    .sw-bottom
+        position: relative
+        width: $w
+        height: $h
+        top: $h * 2
+        background: rgb(255, 255, 255)
+        border: none
+        border-radius: 4px 4px 4px 4px
+        transition: transform 0.5s, top 0.2s
+        transition-delay: 0.2s, 0s 
+
+    .sw-footer
+        position: relative
+        width: $w
+        height: $h
+        top: $h * 4
+        background: rgb(255, 255, 255)
+        border: none
+        border-radius: 4px 4px 4px 4px
+        transition: all 0.5s
+        transition-delay: 0.1s 
+
+    .sandwich.active 
+        .sw-topper
+            top: 15px
+            transform: rotate(140deg)
+        .sw-bottom
+            top: 5px
+            transform: rotate(-140deg)
+        .sw-footer
+            opacity: 0
+            top: 0
+            transform: rotate(180deg)
+
+    .box_wrapper .info_block
+        width: 345px
+
+    .box_wrapper .info_block .date
+        margin-left: 44px
+
+    .box_wrapper .info_block .view
+        margin-left: 88px
+
+    .box_wrapper .info_block .like
+        margin-left: 56px
+
+    .category
+        &:after
+            width: 228px
+
+    footer
+        .contacts
+            margin-left: 22px
+        .about_us
+            margin-left: 10px
+
+
+        
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+    
+    .slogan_container
+        h1
+            font-size: 38px
+        p
+            font-size: 14px
+        button
+            font-size: 16px
+
+    .show_more_btn_container
+        .show_more_btn
+            font-size: 16px
+
+    .category
+        &:after
+            width: 75%
+
+    .box_wrapper
+        .text
+            width: 90%
+        .info_block
+            width: 100%
+            .view
+                margin-left: 25%
+            .like
+                margin-left: 15%
+    
+    
+
+    
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+    
+    .slogan_container
+        button
+            font-size: 14px
+
+    .show_more_btn_container
+        .show_more_btn
+            font-size: 14px
+
+    .logo
+        padding: 25px 40px
+    
+    .category
+        &:after
+            width: 70%
+    
+    .box_wrapper
+        .text
+            .view
+                margin-left: 5%
+            .like
+                margin-left: 2%
+
+    footer
+        .contacts
+            margin-left: 10px
+            margin-top: 0
+            margin-bottom: 10px
+        
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+@media screen and (orientation:landscape)
+
+    .main_menu
+        ul
+            margin-top: 0
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+
+
+
+    /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+
+    
